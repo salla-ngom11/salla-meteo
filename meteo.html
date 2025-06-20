@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ma météo</title>
+  <link rel="stylesheet" href="meteo.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>Météo en temps réel</h1>
+
+    <div class="search">
+      <input id="cityInput" type="text" placeholder="Tape une ville…">
+      <button id="searchBtn">🔍</button>
+    </div>
+
+    <div id="card" class="card hidden">
+      <h2 id="cityName"></h2>
+      <img id="icon" alt="" />
+      <p id="temp"></p>
+      <p id="desc"></p>
+    </div>
+
+    <p id="errorMsg" class="error hidden"></p>
+  </div>
+
+  <script src="meteo.js"></script>
+</body>
+</html>
